@@ -3,26 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Saseendran | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Ayush Thoniparambil Saseendran | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
-        header { background: linear-gradient(90deg, #4b6cb7, #182848); color: #fff; padding: 20px; text-align: center; font-size: 1.2em; }
-        nav { display: flex; justify-content: center; gap: 15px; margin-top: 10px; }
-        nav a { color: #fff; text-decoration: none; font-weight: bold; padding: 10px 15px; border-radius: 5px; transition: background 0.3s; }
-        nav a:hover { background: rgba(255, 255, 255, 0.2); }
-        section { padding: 40px; margin: 20px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
-        h2 { color: #4b6cb7; }
-        a { color: #007bff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        footer { text-align: center; padding: 15px; background: #182848; color: #fff; position: fixed; bottom: 0; width: 100%; }
-        .project-popup { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 500px; z-index: 9999; }
-        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9998; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4b6cb7;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #182848;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 <header>
-    <h1>Ayush Saseendran</h1>
+    <h1>Ayush Thoniparambil Saseendran</h1>
     <p>Data Engineer | Cloud Enthusiast | Applied Data Science Graduate</p>
     <nav>
         <a href="#about">About</a>
@@ -35,54 +80,36 @@
 
 <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate Data Engineer with a Master’s degree in Applied Data Science from Syracuse University. I have hands-on experience with cloud platforms (AWS, GCP, Azure), ETL pipelines, data modeling, and visualization tools. With strong skills in Python, SQL, R, and a deep understanding of database management, I love turning complex data into impactful solutions. My journey from electronics engineering to data science showcases my drive to continuously learn, adapt, and innovate.</p>
+    <p>EExperienced Data Engineer with a strong background in designing scalable data pipelines, building cloud-native solutions, and developing intelligent analytics applications.</p>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
     <ul>
-        <li><strong><a href="#" onclick="openPopup('popup1')">Recipe-Sharing Platform</a></strong></li>
-        <li><strong><a href="#" onclick="openPopup('popup2')">FEC Data Analysis</a></strong></li>
-        <li><strong><a href="#" onclick="openPopup('popup3')">Travel Management System</a></strong></li>
-        <li><strong><a href="#" onclick="openPopup('popup4')">Energy Consumption Forecasting</a></strong></li>
+        <li><strong>Recipe-Sharing Platform</strong> - Developed a multi-cloud platform enabling users to share, search, and rate recipes with SQL backend and PowerApps frontend, integrated with AWS, Azure, and GCP services.</li>
+        <li><strong>FEC Data Analysis</strong> - Built a data warehouse using Snowflake and dbt, and created Power BI dashboards for visualizing 2007-2008 federal election contribution data trends.</li>
+        <li><strong>Travel Management System</strong> - Designed a SQL-based backend and integrated PowerApps interface for seamless travel booking, review management, and reporting dashboards.</li>
+        <li><strong>Energy Consumption Forecasting</strong> - Forecasted electricity demand using R regression models by merging static consumption and weather datasets, and created interactive Shiny dashboards.</li>
     </ul>
 </section>
-
-<div id="popup1" class="project-popup">
-    <h2>Recipe-Sharing Platform</h2>
-    <p>Developed a cloud-native platform enabling users to share, search, and rate recipes. Built using PowerApps for the UI and SQL for the backend, hosted across AWS, Azure, and GCP. Implemented user authentication and advanced search capabilities.</p>
-    <button onclick="closePopup('popup1')">Close</button>
-</div>
-<div id="popup2" class="project-popup">
-    <h2>FEC Data Analysis</h2>
-    <p>Analyzed 2007-08 Federal Election Commission data using Snowflake and dbt. Built fact and dimension tables and visualized contribution patterns and geographic trends through interactive Power BI dashboards.</p>
-    <button onclick="closePopup('popup2')">Close</button>
-</div>
-<div id="popup3" class="project-popup">
-    <h2>Travel Management System</h2>
-    <p>Created a SQL-backed application for managing travel bookings, customer reviews, and operations. Integrated with PowerApps to provide a seamless and user-friendly interface. Developed dashboards for management insights.</p>
-    <button onclick="closePopup('popup3')">Close</button>
-</div>
-<div id="popup4" class="project-popup">
-    <h2>Energy Consumption Forecasting</h2>
-    <p>Forecasted electricity demand using regression models in R. Merged weather and consumption data, achieving 90% prediction accuracy, and visualized insights through an interactive Shiny app for policymakers.</p>
-    <button onclick="closePopup('popup4')">Close</button>
-</div>
-<div class="overlay" id="overlay" onclick="closeAllPopups()"></div>
 
 <section id="experience">
     <h2>Professional Experience</h2>
     <ul>
         <li><strong>Data Science Intern - BioMarin Pharmaceutical Inc (May 2024 – Nov 2024)</strong>
             <ul>
-                <li>Migrated risk register data into SQL Server, improving efficiency by 40%.</li>
-                <li>Built an intuitive PowerApps application for data management and audit trail monitoring.</li>
+                <li>Directed transfer of structured risk register data from Excel to SQL Server, improving data management efficiency by 40%.</li>
+                <li>Developed PowerApps UI for data updates and management, enhancing user engagement by 35%.</li>
+                <li>Implemented audit triggers to ensure traceability and maintain data integrity.</li>
+                <li>Defined user roles and access controls ensuring compliance with internal data governance policies.</li>
             </ul>
         </li>
         <li><strong>Data Engineering Analyst - Accenture (Jan 2020 – Aug 2023)</strong>
             <ul>
-                <li>Designed robust ETL pipelines with Informatica and improved database query performance by 30%.</li>
-                <li>Automated batch jobs and led migration projects, enhancing operational workflows.</li>
+                <li>Built and optimized ETL pipelines using Informatica PowerCenter and shell scripting, enhancing processing speed by 30%.</li>
+                <li>Designed strategic indexes and materialized views, reducing Oracle database query response times significantly.</li>
+                <li>Led automation initiatives, cutting data processing times by 20% and improving workflow reliability.</li>
+                <li>Collaborated with cross-functional teams to align data models with evolving business needs across OLAP/OLTP systems.</li>
             </ul>
         </li>
     </ul>
@@ -96,28 +123,10 @@
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:athonipa@syr.edu">athonipa@syr.edu</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/ayushsaseendran" target="_blank">LinkedIn Profile</a></p>
+    <p>LinkedIn: <a href="http://www.linkedin.com/in/ayushsaseendran" target="_blank">LinkedIn Profile</a></p>
     <p>GitHub: <a href="https://github.com/ayushsaseendran" target="_blank">GitHub Profile</a></p>
 </section>
 
 <footer>
     <p>&copy; 2025 Ayush Saseendran. All Rights Reserved.</p>
 </footer>
-
-<script>
-function openPopup(id) {
-    document.getElementById(id).style.display = 'block';
-    document.getElementById('overlay').style.display = 'block';
-}
-function closePopup(id) {
-    document.getElementById(id).style.display = 'none';
-    document.getElementById('overlay').style.display = 'none';
-}
-function closeAllPopups() {
-    const popups = document.querySelectorAll('.project-popup');
-    popups.forEach(popup => popup.style.display = 'none');
-    document.getElementById('overlay').style.display = 'none';
-}
-</script>
-</body>
-</html>
