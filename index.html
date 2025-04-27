@@ -1,104 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayush Thoniparambil Saseendran - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
-  <style>
-    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #0f0f0f; color: #eee; scroll-behavior: smooth; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #1a1a1a; position: sticky; top: 0; z-index: 1000; }
-    nav a { color: #00adb5; margin: 0 15px; text-decoration: none; font-weight: 600; }
-    nav .right a { padding: 10px 20px; border: 1px solid #00adb5; border-radius: 20px; }
-    header { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 100px 20px; background: #0f0f0f; }
-    .header-text { max-width: 500px; margin-right: 50px; }
-    .header-text h1 { font-size: 48px; color: #fff; }
-    .header-text h2 { font-size: 24px; color: #00adb5; }
-    .header-text p { margin-top: 20px; color: #aaa; }
-    .header-img img { width: 250px; height: 250px; object-fit: cover; border-radius: 50%; border: 4px solid #00adb5; }
-    section { max-width: 900px; margin: 80px auto; padding: 20px; background: #1f1f1f; border-radius: 10px; opacity: 0; transform: translateY(30px); transition: all 1s ease; }
-    section.visible { opacity: 1; transform: translateY(0); }
-    h2 { color: #00adb5; margin-bottom: 20px; }
-    ul { padding-left: 20px; }
-    footer { text-align: center; padding: 30px; font-size: 14px; color: #888; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Saseendran | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4b6cb7;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #182848;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-
-<nav>
-  <div class="left">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-  </div>
-  <div class="right">
-    <a href="https://github.com/ayushsaseendran" target="_blank">GitHub Profile</a>
-  </div>
-</nav>
-
 <header>
-  <div class="header-text">
-    <h1>Hi, I am Ayush</h1>
-    <h2>I am a Data Engineer</h2>
-    <p>Passionate about data-driven problem-solving, scalable cloud solutions, and building impactful analytics applications. Let's connect and create real-world solutions!</p>
-  </div>
-  <div class="header-img">
-    <img src="profile.jpg" alt="Ayush Photo">
-  </div>
+    <h1>Ayush Saseendran</h1>
+    <p>Data Engineer | Cloud Enthusiast | Applied Data Science Graduate</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 <section id="about">
-  <h2>About Me</h2>
-  <p>Master's in Applied Data Science from Syracuse University, with a solid foundation in data engineering, machine learning, and cloud computing. Experienced working at BioMarin Pharmaceutical and Accenture, building robust ETL pipelines, databases, and user-centric apps.</p>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <p>Python, R, SQL, Scala, Shell | Snowflake, AWS, GCP, Oracle | Informatica, Airflow, dbt | Power BI, Tableau | PowerApps, Git, Jira</p>
-</section>
-
-<section id="experience">
-  <h2>Professional Experience</h2>
-  <h3>BioMarin Pharmaceutical Inc. (Data Science Intern)</h3>
-  <p>Led SQL Server migration, built PowerApps UI, defined user access controls, improved data governance by 40%.</p>
-  <h3>Accenture (Data Engineering Analyst)</h3>
-  <p>Designed scalable ETL pipelines with Informatica, optimized database performance, and automated batch jobs for faster reporting.</p>
+    <h2>About Me</h2>
+    <p>Master's in Applied Data Science from Syracuse University (GPA: 3.9/4.0). Passionate about building scalable data engineering pipelines, cloud applications, and delivering business insights through analytics and visualization.</p>
 </section>
 
 <section id="projects">
-  <h2>Key Projects</h2>
-  <ul>
-    <li><b>Recipe-Sharing Platform</b>: Multi-cloud system with SQL, PowerApps, and AWS-Azure-GCP services.</li>
-    <li><b>FEC Data Analysis</b>: Snowflake + dbt modeling with Power BI visualization.</li>
-    <li><b>Travel Management App</b>: PowerApps + SQL + dashboards for bookings and management.</li>
-    <li><b>Energy Forecasting</b>: R regression models with Shiny dashboards for energy policy insights.</li>
-  </ul>
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>Recipe-Sharing Platform:</strong> Developed a multi-cloud platform with SQL, PowerApps, AWS, Azure, and GCP integration.</li>
+        <li><strong>FEC Data Analysis:</strong> Designed Snowflake + dbt models and Power BI dashboards for federal election contributions analysis.</li>
+        <li><strong>Travel Management System:</strong> Built SQL-based backend and PowerApps interface for seamless booking and management.</li>
+        <li><strong>Energy Consumption Forecasting:</strong> Developed R regression models and interactive Shiny dashboards to predict electricity demand.</li>
+    </ul>
 </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <p><b>Syracuse University</b> - M.S. in Applied Data Science (2023–2025), GPA 3.9/4.0</p>
-  <p><b>University of Mumbai</b> - B.E. in Electronics & Telecommunication (2015–2019), GPA 3.0/4.0</p>
+<section id="experience">
+    <h2>Professional Experience</h2>
+    <ul>
+        <li><strong>Data Science Intern - BioMarin Pharmaceutical Inc (May 2024 – Nov 2024)</strong>
+            <ul>
+                <li>Migrated risk register from Excel to SQL Server, improving operational efficiency by 40%.</li>
+                <li>Designed front-end UI using PowerApps, increasing user engagement by 35%.</li>
+            </ul>
+        </li>
+        <li><strong>Data Engineering Analyst - Accenture (Jan 2020 – Aug 2023)</strong>
+            <ul>
+                <li>Built and optimized ETL pipelines using Informatica, improving processing speed by 30%.</li>
+                <li>Led automation scripts implementation, reducing project timelines by 15%.</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="resume">
+    <h2>Resume</h2>
+    <p><a href="Ayush_Resume_Graduate.pdf" download>Download My Resume (PDF)</a></p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:athonipa@syr.edu">athonipa@syr.edu</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ayushsaseendran" target="_blank">LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/ayushsaseendran" target="_blank">GitHub Profile</a></p>
 </section>
 
 <footer>
-  © 2025 Ayush Thoniparambil Saseendran
+    <p>&copy; 2025 Ayush Saseendran. All Rights Reserved.</p>
 </footer>
-
-<script>
-  const sections = document.querySelectorAll('section');
-  window.addEventListener('scroll', () => {
-    const trigger = window.innerHeight * 0.8;
-    sections.forEach(sec => {
-      const rect = sec.getBoundingClientRect();
-      if (rect.top < trigger) {
-        sec.classList.add('visible');
-      }
-    });
-  });
-</script>
-
 </body>
 </html>
