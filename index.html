@@ -2,54 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayush Thoniparambil Saseendran | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      background-color: #0d1117;
+      color: #c9d1d9;
     }
     header {
-      background: linear-gradient(90deg, #4b6cb7, #182848);
-      color: #fff;
-      padding: 20px;
+      background: #161b22;
+      color: #58a6ff;
+      padding: 30px 20px;
       text-align: center;
     }
     nav {
       display: flex;
       justify-content: center;
-      gap: 20px;
-      margin-top: 10px;
       flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 15px;
     }
     nav a {
-      color: #fff;
+      color: #58a6ff;
       text-decoration: none;
-      font-weight: 600;
-      padding: 10px 15px;
-      border-radius: 5px;
+      font-weight: bold;
+      padding: 8px 15px;
+      border: 1px solid #58a6ff;
+      border-radius: 20px;
       transition: background 0.3s;
     }
     nav a:hover {
-      background: rgba(255, 255, 255, 0.2);
+      background: #21262d;
     }
     section {
       padding: 40px 20px;
       margin: 20px auto;
-      max-width: 1000px;
-      background: #fff;
+      max-width: 900px;
+      background: #161b22;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
     }
     h2 {
-      color: #4b6cb7;
+      color: #58a6ff;
       margin-bottom: 20px;
-    }
-    ul {
-      padding-left: 20px;
     }
     .skills-list {
       display: flex;
@@ -57,17 +55,16 @@
       gap: 10px;
     }
     .skill-badge {
-      background: #e0e7ff;
-      color: #1e3a8a;
+      background: #21262d;
+      color: #58a6ff;
       padding: 8px 12px;
       border-radius: 20px;
       font-size: 14px;
     }
     .timeline {
-      border-left: 3px solid #4b6cb7;
+      border-left: 3px solid #58a6ff;
       margin-left: 20px;
       padding-left: 20px;
-      position: relative;
     }
     .timeline-item {
       margin-bottom: 30px;
@@ -75,33 +72,32 @@
     }
     .timeline-item::before {
       content: '';
-      width: 14px;
-      height: 14px;
-      background: #4b6cb7;
+      width: 12px;
+      height: 12px;
+      background: #58a6ff;
       border-radius: 50%;
       position: absolute;
       left: -30px;
       top: 5px;
     }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #182848;
-      color: #fff;
-      margin-top: 40px;
-    }
     .contact-links a {
       display: block;
       margin-bottom: 8px;
-      color: #007bff;
+      color: #58a6ff;
       text-decoration: none;
     }
     .contact-links a:hover {
       text-decoration: underline;
     }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #161b22;
+      color: #8b949e;
+      margin-top: 40px;
+    }
   </style>
 </head>
-
 <body>
 
 <header>
@@ -119,7 +115,7 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <p>Experienced Data Engineer with a strong background in designing scalable data pipelines, building cloud-native solutions, and developing intelligent analytics applications. Skilled in Python, SQL, R, Snowflake, dbt, Informatica, and cloud platforms like AWS, GCP, and Azure. Passionate about turning data into actionable insights and solving real-world problems with technology.</p>
+  <p>Experienced Data Engineer with a strong background in designing scalable data pipelines, building cloud-native solutions, and developing intelligent analytics applications. Skilled in Python, SQL, R, Snowflake, dbt, Informatica, Power BI, AWS, GCP, and Azure. Passionate about solving real-world problems through data-driven solutions.</p>
 </section>
 
 <section id="skills">
@@ -146,12 +142,12 @@
     <div class="timeline-item">
       <h3>Data Science Intern - BioMarin Pharmaceutical Inc</h3>
       <p>May 2024 – Nov 2024</p>
-      <p>Migrated risk register data to SQL Server, developed PowerApps UI, implemented audit triggers, and designed user role access for improved data governance.</p>
+      <p>Migrated risk register data to SQL Server, developed PowerApps UI, implemented audit triggers, and designed user role access models to improve governance.</p>
     </div>
     <div class="timeline-item">
       <h3>Data Engineering Analyst - Accenture</h3>
       <p>Jan 2020 – Aug 2023</p>
-      <p>Built ETL pipelines using Informatica, optimized Oracle DB performance, automated batch processes, and collaborated on cloud-based data solutions.</p>
+      <p>Built ETL pipelines using Informatica, optimized database performance, automated batch jobs, and worked on cloud migration initiatives across OLAP/OLTP systems.</p>
     </div>
   </div>
 </section>
@@ -159,18 +155,18 @@
 <section id="projects">
   <h2>Projects</h2>
   <ul>
-    <li><strong>Recipe-Sharing Platform</strong> — Multi-cloud system with SQL backend, PowerApps UI, AWS-Azure-GCP hosting.</li>
-    <li><strong>FEC Data Analysis</strong> — Modeled election contribution data using Snowflake, dbt; visualized insights with Power BI.</li>
-    <li><strong>Travel Management System</strong> — SQL + PowerApps app for managing bookings, dashboards, and reviews.</li>
-    <li><strong>Energy Consumption Forecasting</strong> — Regression modeling in R with Shiny dashboards for forecasting electricity demand.</li>
+    <li><strong>Recipe-Sharing Platform</strong> — Multi-cloud system using SQL backend and PowerApps frontend, hosted on AWS, Azure, and GCP.</li>
+    <li><strong>FEC Data Analysis</strong> — Snowflake warehouse + dbt models + Power BI dashboards for election contribution insights.</li>
+    <li><strong>Travel Management System</strong> — PowerApps travel booking app with SQL backend and real-time dashboards.</li>
+    <li><strong>Energy Consumption Forecasting</strong> — R regression models and Shiny dashboards to predict electricity demand trends.</li>
   </ul>
 </section>
 
 <section id="education">
   <h2>Education</h2>
   <ul>
-    <li><strong>M.S. in Applied Data Science</strong> — Syracuse University, 2025</li>
-    <li><strong>B.E. in Electronics & Telecommunication</strong> — University of Mumbai, 2019</li>
+    <li><strong>M.S. in Applied Data Science</strong> — Syracuse University (2025)</li>
+    <li><strong>B.E. in Electronics & Telecommunication</strong> — University of Mumbai (2019)</li>
   </ul>
 </section>
 
@@ -184,7 +180,7 @@
 </section>
 
 <footer>
-  <p>© 2025 Ayush Saseendran. All Rights Reserved.</p>
+  <p>© 2025 Ayush Thoniparambil Saseendran. All Rights Reserved.</p>
 </footer>
 
 </body>
