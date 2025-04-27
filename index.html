@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Thoniparambil Saseendran | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <img src="images/profile.jpg" alt="Ayush Photo">
+  <h1>Ayush Thoniparambil Saseendran</h1>
+  <div class="typing" id="typing"></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Experienced Data Engineer with a strong background in designing scalable pipelines, cloud-native solutions, and delivering actionable insights. Skilled in Python, SQL, R, AWS, Azure, Snowflake, dbt, Informatica, and more.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <img src="images/python.png" alt="Python"><span>Python</span>
+    <img src="images/aws.png" alt="AWS"><span>AWS</span>
+    <img src="images/azure.png" alt="Azure"><span>Azure</span>
+    <img src="images/gcp.png" alt="GCP"><span>GCP</span>
+    <img src="images/snowflake.png" alt="Snowflake"><span>Snowflake</span>
+    <img src="images/dbt.png" alt="dbt"><span>dbt</span>
+    <img src="images/powerbi.png" alt="Power BI"><span>Power BI</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Data Science Intern - BioMarin Pharmaceutical Inc</h3>
+      <p>May 2024 – Nov 2024</p>
+      <p>Migrated risk registers to SQL Server, built PowerApps UI, implemented audit triggers, and defined user roles.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Data Engineering Analyst - Accenture</h3>
+      <p>Jan 2020 – Aug 2023</p>
+      <p>Built ETL pipelines, optimized Oracle DB performance, automated workflows, and modernized cloud data solutions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Recipe-Sharing Platform</h3>
+      <p>Multi-cloud app using SQL, PowerApps, AWS, Azure, GCP.</p>
+    </div>
+    <div class="project-card">
+      <h3>FEC Data Analysis</h3>
+      <p>Data warehouse in Snowflake + dbt, visualization in Power BI.</p>
+    </div>
+    <div class="project-card">
+      <h3>Travel Management System</h3>
+      <p>SQL backend, PowerApps frontend for booking and reviews.</p>
+    </div>
+    <div class="project-card">
+      <h3>Energy Consumption Forecasting</h3>
+      <p>Regression modeling with R and Shiny dashboards.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>M.S. Applied Data Science</strong> — Syracuse University (2023–2025)</li>
+    <li><strong>B.E. Electronics and Telecommunication</strong> — University of Mumbai (2015–2019)</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-links">
+    <a href="mailto:athonipa@syr.edu">Email: athonipa@syr.edu</a>
+    <a href="https://linkedin.com/in/ayushsaseendran" target="_blank">LinkedIn</a>
+    <a href="https://github.com/ayushsaseendran" target="_blank">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Ayush Thoniparambil Saseendran. All Rights Reserved.</p>
+</footer>
+
+<script>
+const texts = ['Data Engineer', 'Cloud Enthusiast', 'Applied Data Science Graduate'];
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+(function type() {
+  if (count === texts.length) { count = 0; }
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+  document.getElementById('typing').textContent = letter;
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+    setTimeout(type, 1000);
+  } else {
+    setTimeout(type, 150);
+  }
+})();
+</script>
+
+</body>
+</html>
