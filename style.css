@@ -67,33 +67,67 @@ nav a {
   font-weight: 600;
 }
 
-section {
-  padding: 40px;
+#skills {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-h2 {
-  color: #58a6ff;
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  margin-bottom: 40px;
+  color: #cbd5e0;
+}
+
+.skills-category {
+  border: 1px solid #7c3aed;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.skills-category h3 {
+  font-size: 24px;
   margin-bottom: 20px;
+  color: #d1d5db;
 }
 
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
-.skill-card {
+.skill-item {
   background: #1f2937;
+  padding: 15px 20px;
+  border: 1px solid #4b5563;
   border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  width: 120px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s;
 }
 
-.skill-card img {
-  width: 50px;
-  height: 50px;
+.skill-item img {
+  width: 30px;
+  height: 30px;
 }
+
+.skill-item p {
+  margin: 0;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.skill-item:hover {
+  background: #4b5563;
+}
+
 
 .timeline {
   border-left: 3px solid #58a6ff;
