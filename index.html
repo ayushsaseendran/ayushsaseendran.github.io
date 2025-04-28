@@ -4,181 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayush Thoniparambil Saseendran | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 40px;
-      flex-wrap: wrap;
-    }
-    .header-content {
-      display: flex;
-      align-items: center;
-    }
-    .text h1 {
-      font-size: 40px;
-      margin: 0;
-    }
-    .typing {
-      font-size: 18px;
-      color: #58a6ff;
-      margin-top: 10px;
-    }
-    .profile-pic img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-left: 30px;
-      border: 3px solid #58a6ff;
-    }
-    .github-button {
-      padding: 10px 20px;
-      background-color: #58a6ff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    section {
-      padding: 40px;
-    }
-    h2 {
-      color: #58a6ff;
-      margin-bottom: 20px;
-    }
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .skill-card {
-      background: #1f2937;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      width: 120px;
-    }
-    .skill-card img {
-      width: 50px;
-      height: 50px;
-    }
-    .timeline {
-      border-left: 3px solid #58a6ff;
-      padding-left: 20px;
-    }
-    .timeline-item {
-      margin-bottom: 30px;
-      position: relative;
-    }
-    .timeline-item::before {
-      content: '';
-      width: 15px;
-      height: 15px;
-      background: #58a6ff;
-      border-radius: 50%;
-      position: absolute;
-      left: -30px;
-      top: 0;
-    }
-    .projects-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .project-card {
-      background: #1f2937;
-      padding: 20px;
-      border-radius: 10px;
-      width: 200px;
-      text-align: center;
-      cursor: pointer;
-    }
-    .project-card:hover {
-      background: #374151;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0f2027;
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.7);
-    }
-    .modal-content {
-      background: #1f2937;
-      margin: 15% auto;
-      padding: 20px;
-      border-radius: 10px;
-      width: 80%;
-      color: white;
-    }
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    .close:hover,
-    .close:focus {
-      color: #fff;
-      cursor: pointer;
-    }
-  </style>
-  <script>
-    const texts = ['Data Engineer', 'Cloud Enthusiast', 'Applied Data Science Graduate'];
-    let count = 0;
-    let index = 0;
-    let currentText = '';
-    let letter = '';
-    (function type() {
-      if (count === texts.length) {
-        count = 0;
-      }
-      currentText = texts[count];
-      letter = currentText.slice(0, ++index);
-      document.getElementById('typing').textContent = letter;
-      if (letter.length === currentText.length) {
-        count++;
-        index = 0;
-        setTimeout(type, 1000);
-      } else {
-        setTimeout(type, 150);
-      }
-    })();
-    function openModal(title, description) {
-      document.getElementById('modal-title').innerText = title;
-      document.getElementById('modal-description').innerText = description;
-      document.getElementById('modal').style.display = 'block';
-    }
-    function closeModal() {
-      document.getElementById('modal').style.display = 'none';
-    }
-  </script>
 </head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="text">
+      <h1>Hi, I'm Ayush</h1>
+      <p class="typing" id="typing"></p>
+    </div>
+    <div class="profile-pic">
+      <img src="assets/profile.jpg" alt="Profile Picture">
+    </div>
+  </div>
+  <a href="https://github.com/ayushsaseendran" target="_blank" class="github-button">GitHub Profile</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Experienced Data Engineer with a strong foundation in designing scalable data pipelines, cloud-native solutions, and intelligent analytics applications. Proficient in Python, SQL, R, Snowflake, AWS, Azure, dbt, Power BI, and other technologies. Passionate about delivering data-driven insights and creating efficient, impactful systems.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><img src="assets/python.png"><p>Python</p></div>
+    <div class="skill-card"><img src="assets/aws.png"><p>AWS</p></div>
+    <div class="skill-card"><img src="assets/azure.png"><p>Azure</p></div>
+    <div class="skill-card"><img src="assets/gcp.png"><p>GCP</p></div>
+    <div class="skill-card"><img src="assets/snowflake.png"><p>Snowflake</p></div>
+    <div class="skill-card"><img src="assets/dbt.png"><p>dbt</p></div>
+    <div class="skill-card"><img src="assets/powerbi.png"><p>Power BI</p></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Data Science Intern - BioMarin Pharmaceutical Inc</h3>
+      <span>May 2024 – Nov 2024</span>
+      <p>Worked on migrating risk register systems to SQL Server and PowerApps; developed audit and governance models; implemented role-based access.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Data Engineering Analyst - Accenture</h3>
+      <span>Jan 2020 – Aug 2023</span>
+      <p>Built ETL pipelines, optimized database queries, integrated cloud platforms, and automated data workflows across AWS and Snowflake.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card" onclick="openModal('Recipe-Sharing Platform','Built using SQL, PowerApps, AWS, Azure, and GCP to allow users to share, search, and rate recipes.')">
+      <h3>Recipe-Sharing Platform</h3>
+    </div>
+    <div class="project-card" onclick="openModal('FEC Data Analysis','Created a Snowflake data warehouse and visualized federal election data trends using Power BI.')">
+      <h3>FEC Data Analysis</h3>
+    </div>
+    <div class="project-card" onclick="openModal('Travel Management System','Designed a SQL-backed PowerApps system for booking, review, and reporting.')">
+      <h3>Travel Management System</h3>
+    </div>
+    <div class="project-card" onclick="openModal('Energy Consumption Forecasting','Predicted electricity demand using R models, visualized via Shiny apps.')">
+      <h3>Energy Consumption Forecasting</h3>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Syracuse University</h3>
+      <span>2023 – 2025</span>
+      <p>Master of Science, Applied Data Science</p>
+    </div>
+    <div class="timeline-item">
+      <h3>University of Mumbai</h3>
+      <span>2015 – 2019</span>
+      <p>Bachelor of Engineering, Electronics and Telecommunication</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:athonipa@syr.edu">athonipa@syr.edu</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/ayushsaseendran" target="_blank">linkedin.com/in/ayushsaseendran</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ayush Thoniparambil Saseendran. All rights reserved.</p>
+</footer>
+
+<!-- Modal Popup -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
