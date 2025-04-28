@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayush Thoniparambil Saseendran | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -67,19 +58,26 @@ nav a {
   font-weight: 600;
 }
 
-#skills {
+section {
   padding: 60px 20px;
-  text-align: center;
 }
 
 .section-title {
   font-size: 36px;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .section-subtitle {
   margin-bottom: 40px;
   color: #cbd5e0;
+  text-align: center;
+}
+
+/* Skills Section */
+#skills {
+  text-align: center;
 }
 
 .skills-category {
@@ -104,7 +102,7 @@ nav a {
 
 .skill-item {
   background: #1f2937;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border: 1px solid #4b5563;
   border-radius: 10px;
   display: flex;
@@ -114,8 +112,9 @@ nav a {
 }
 
 .skill-item img {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .skill-item p {
@@ -128,39 +127,60 @@ nav a {
   background: #4b5563;
 }
 
+/* Experience Section */
+#experience {
+  padding: 60px 20px;
+}
 
 .timeline {
-  border-left: 3px solid #58a6ff;
-  padding-left: 20px;
+  position: relative;
+  margin: 40px auto;
+  padding-left: 30px;
+  border-left: 3px solid #7c3aed; /* purple */
+  max-width: 800px;
 }
 
 .timeline-item {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  text-align: left;
   position: relative;
 }
 
 .timeline-item::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  background: #58a6ff;
-  border-radius: 50%;
+  content: "";
   position: absolute;
-  left: -30px;
+  left: -10px;
   top: 0;
+  width: 20px;
+  height: 20px;
+  background: #7c3aed;
+  border-radius: 50%;
 }
 
+.timeline-item h3 {
+  font-size: 22px;
+  color: #e5e7eb;
+  margin-bottom: 5px;
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  color: #cbd5e0;
+}
+
+/* Projects Section */
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .project-card {
   background: #1f2937;
   padding: 20px;
   border-radius: 10px;
-  width: 200px;
+  width: 220px;
   text-align: center;
   cursor: pointer;
 }
@@ -175,6 +195,7 @@ footer {
   background: #0f2027;
 }
 
+/* Modal Section */
 .modal {
   display: none;
   position: fixed;
@@ -207,5 +228,3 @@ footer {
   color: #fff;
   cursor: pointer;
 }
-  </style>
-</head>
