@@ -1,4 +1,4 @@
-body {
+ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -131,7 +131,7 @@ section {
 #experience {
   padding: 60px 20px;
 }
-.vertical-timeline {
+.timeline {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
@@ -139,68 +139,55 @@ section {
   border-left: 3px solid #7c3aed;
 }
 
-.vertical-timeline .timeline-item {
+.timeline-item {
   position: relative;
   margin-bottom: 50px;
-}
-
-.vertical-timeline .timeline-item .dot {
-  position: absolute;
-  left: -11px;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  background-color: #7c3aed;
-  border-radius: 50%;
-  border: 3px solid #1f2937;
-}
-
-.vertical-timeline .content-box {
+  padding-left: 40px;
   background: #1f2937;
-  padding: 20px;
   border-radius: 10px;
-  color: #e5e7eb;
-  margin-left: 30px;
+  padding: 20px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  text-align: left;
 }
 
-.company-logo {
-  height: 40px;
-  margin-bottom: 10px;
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  background-color: #7c3aed;
+  border: 3px solid #1f2937;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-.company {
+.timeline-item h3 {
+  font-size: 20px;
   font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.timeline-item span,
+.timeline-item p {
+  font-size: 15px;
+  color: #cbd5e1;
   margin: 5px 0;
 }
-.date {
-  color: #cbd5e1;
-  font-size: 0.95em;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-
-}
-
 
 @media screen and (max-width: 768px) {
-  .timeline::before {
-    left: 8px;
+  .timeline {
+    padding-left: 20px;
   }
-
-  .timeline-item,
-  .timeline-item.left,
-  .timeline-item.right {
-    width: 100%;
-    padding-left: 40px;
-    left: 0;
+  .timeline-item {
+    padding-left: 30px;
   }
-
   .timeline-item::before {
-    left: 0;
+    left: -16px;
   }
 }
+
 
 /* Projects Section */
 .projects-grid {
