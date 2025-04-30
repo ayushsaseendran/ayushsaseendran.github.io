@@ -131,72 +131,57 @@ section {
 #experience {
   padding: 60px 20px;
 }
-.timeline-section {
-  padding: 60px 20px;
-}
-
-.timeline {
+.vertical-timeline {
   position: relative;
-  margin: 40px auto;
+  max-width: 1000px;
+  margin: 0 auto;
   padding-left: 40px;
   border-left: 3px solid #7c3aed;
-  max-width: 800px;
 }
 
-.timeline-item {
+.vertical-timeline .timeline-item {
   position: relative;
   margin-bottom: 50px;
-  padding-left: 30px;
 }
 
-.timeline-item .dot {
+.vertical-timeline .timeline-item .dot {
   position: absolute;
   left: -11px;
-  top: 6px;
-  width: 16px;
-  height: 16px;
+  top: 0;
+  width: 20px;
+  height: 20px;
   background-color: #7c3aed;
   border-radius: 50%;
-  border: 2px solid #0f172a;
+  border: 3px solid #1f2937;
 }
 
-.timeline-item .content {
+.vertical-timeline .content-box {
   background: #1f2937;
-  border-radius: 10px;
   padding: 20px;
+  border-radius: 10px;
   color: #e5e7eb;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
-.timeline-item .company-logo {
-  width: 50px;
-  height: auto;
+.company-logo {
+  height: 40px;
   margin-bottom: 10px;
 }
 
-.experience-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-
-.experience-header h3 {
-  margin: 0;
-  font-size: 1.25rem;
+.company {
   font-weight: 600;
+  margin: 5px 0;
+}
+.date {
+  color: #cbd5e1;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
-.experience-header .company {
-  font-size: 0.95rem;
-  color: #9ca3af;
-}
 
-.experience-header .date {
-  font-size: 0.85rem;
-  color: #9ca3af;
 }
-
 
 
 @media screen and (max-width: 768px) {
