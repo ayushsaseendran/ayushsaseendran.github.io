@@ -134,38 +134,77 @@ section {
 
 .timeline {
   position: relative;
-  margin: 40px auto;
-  padding-left: 30px;
-  border-left: 3px solid #7c3aed; /* purple */
-  max-width: 800px;
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #7c3aed;
+  transform: translateX(-50%);
 }
 
 .timeline-item {
-  margin-bottom: 50px;
-  text-align: left;
   position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  background: #1f2937;
+  border-radius: 12px;
+  margin: 30px 0;
+  color: #cbd5e1;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
 }
 
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -10px;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  background: #7c3aed;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: #7c3aed;
+  border: 2px solid #c084fc;
   border-radius: 50%;
+  z-index: 1;
 }
 
-.timeline-item h3 {
-  font-size: 22px;
-  color: #e5e7eb;
-  margin-bottom: 5px;
+.timeline-item.left::before {
+  right: -6px;
 }
 
-.timeline-item p {
-  margin: 5px 0;
-  color: #cbd5e0;
+.timeline-item.right::before {
+  left: -6px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    padding-left: 40px;
+    left: 0;
+  }
+
+  .timeline-item::before {
+    left: 0;
+  }
 }
 
 /* Projects Section */
