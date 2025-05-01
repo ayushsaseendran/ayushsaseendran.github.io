@@ -131,39 +131,44 @@ section {
 #experience {
   padding: 60px 20px;
 }
+/* Timeline Vertical Line */
 .experience-timeline {
   position: relative;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding-left: 40px;
   border-left: 3px solid #7c3aed;
 }
 
+/* Each Experience Block */
 .experience-item {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   padding-left: 30px;
 }
 
+/* Timeline Dot */
 .timeline-dot {
   position: absolute;
-  left: -11px;
   top: 10px;
+  left: -11px;
   width: 16px;
   height: 16px;
   background-color: #7c3aed;
-  border: 3px solid #1f2937;
   border-radius: 50%;
+  border: 2px solid #1e293b;
 }
 
+/* Experience Content Box */
 .experience-content {
   background: #1f2937;
+  border-radius: 12px;
   padding: 20px;
-  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #e5e7eb;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Header with Logo and Title */
 .experience-header {
   display: flex;
   align-items: center;
@@ -171,34 +176,61 @@ section {
   margin-bottom: 10px;
 }
 
+/* Company Logo */
 .company-icon {
   width: 40px;
   height: 40px;
   object-fit: contain;
+  border-radius: 6px;
 }
 
-.company {
+/* Job Title + Company Info */
+.experience-header h3 {
+  font-size: 20px;
+  margin: 0;
   font-weight: 600;
-  margin: 5px 0;
 }
 
-.date {
+.experience-header .company {
   color: #cbd5e1;
+  margin: 0;
+}
+
+.experience-header .date {
   font-size: 0.9em;
+  color: #9ca3af;
 }
 
+/* Paragraph Styling */
+.experience-content p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Responsive Timeline */
 @media screen and (max-width: 768px) {
-  .timeline {
+  .experience-timeline {
     padding-left: 20px;
+    border-left: 2px solid #7c3aed;
   }
-  .timeline-item {
-    padding-left: 30px;
+
+  .timeline-dot {
+    left: -10px;
   }
-  .timeline-item::before {
-    left: -16px;
+
+  .experience-content {
+    padding: 15px;
+  }
+
+  .company-icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
+
+
+  
 
 /* Projects Section */
 .projects-grid {
