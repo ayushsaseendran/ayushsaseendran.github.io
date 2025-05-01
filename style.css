@@ -81,12 +81,13 @@ section {
 }
 
 .skills-category {
-  border: 1px solid #7c3aed;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 16px;
-  padding: 30px;
-  margin-bottom: 40px;
-}
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    border: 1px solid #9333ea;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 
 .skills-category h3 {
   font-size: 24px;
