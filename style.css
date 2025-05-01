@@ -183,6 +183,7 @@ section {
   color: #f1f5f9;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   font-family: 'Poppins', sans-serif;
+  text-align: left;
 }
 
 .company-icon {
@@ -196,7 +197,29 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.company {
+  margin: 0;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.date {
+  margin: 4px 0 10px 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.skills {
+  margin-top: 12px;
 }
 /* Responsive Timeline */
 @media screen and (max-width: 768px) {
