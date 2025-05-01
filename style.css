@@ -131,7 +131,7 @@ section {
 #experience {
   padding: 60px 20px;
 }
-.timeline {
+.experience-timeline {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
@@ -139,41 +139,52 @@ section {
   border-left: 3px solid #7c3aed;
 }
 
-.timeline-item {
+.experience-item {
   position: relative;
   margin-bottom: 50px;
-  padding-left: 40px;
-  background: #1f2937;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
-  text-align: left;
+  padding-left: 30px;
 }
 
-.timeline-item::before {
-  content: "";
+.timeline-dot {
   position: absolute;
-  left: -21px;
-  top: 20px;
-  width: 14px;
-  height: 14px;
+  left: -11px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
   background-color: #7c3aed;
   border: 3px solid #1f2937;
   border-radius: 50%;
-  z-index: 1;
 }
 
-.timeline-item h3 {
-  font-size: 20px;
+.experience-content {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
+  color: #e5e7eb;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.company-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.company {
   font-weight: 600;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 
-.timeline-item span,
-.timeline-item p {
-  font-size: 15px;
+.date {
   color: #cbd5e1;
-  margin: 5px 0;
+  font-size: 0.9em;
 }
 
 @media screen and (max-width: 768px) {
