@@ -254,23 +254,47 @@ section {
 
 /* Projects Section */
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-  justify-content: center;
+  margin-top: 30px;
 }
 
 .project-card {
-  background: #1f2937;
+  background: #1e293b;
   padding: 20px;
   border-radius: 10px;
-  width: 220px;
-  text-align: center;
-  cursor: pointer;
+  color: #f1f5f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s;
 }
 
 .project-card:hover {
   background: #374151;
+}
+
+.project-title {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-description {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.project-tags span {
+  display: inline-block;
+  background-color: rgba(133, 76, 230, 0.1);
+  color: #7c3aed;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 6px;
+  font-weight: 500;
 }
 
 footer {
