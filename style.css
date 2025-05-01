@@ -51,23 +51,43 @@ header {
 }
 
 nav {
-  background-color: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a2b38; /* or #0f0f1b as in screenshot */
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 nav a {
-  color: white; /* default color */
+  color: white;
   text-decoration: none;
   margin: 0 15px;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #00d4ff; /* or any color you prefer on hover */
+  color: #a855f7;
 }
+
+.github-btn {
+  border: 1.5px solid #a855f7;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #a855f7;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: #a855f7;
+  color: white;
+}
+
 
 section {
   padding: 60px 20px;
