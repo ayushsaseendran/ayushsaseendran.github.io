@@ -4,6 +4,10 @@
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #ffffff;
 }
+nav {
+  background-color: #1a2b38;
+}
+
 
 header {
   display: flex;
