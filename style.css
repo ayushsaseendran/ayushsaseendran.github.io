@@ -377,6 +377,7 @@ section {
 .experience-container, .projects-container, .education-container, .contact-container {
   background: #0f172a; /* dark background for sections */
   margin: 20px 0;
+  box-sizing: border-box;
   border-radius: 10px;
   padding: 40px 20px;
 }
