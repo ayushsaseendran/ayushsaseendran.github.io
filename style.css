@@ -288,6 +288,7 @@ section {
   
 
 /* Projects Section */
+/* Projects Section */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -295,24 +296,23 @@ section {
   margin-top: 30px;
 }
 
-
-
-
 .project-card {
-  text-decoration: none; /* removes underline for all content inside the link */
+  text-decoration: none;            /* Ensures no underlines */
   background: #1e293b;
   padding: 20px;
   border-radius: 10px;
   color: #f1f5f9;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Poppins', sans-serif;
   transition: background 0.3s;
+  display: block;                   /* Makes the whole card clickable */
 }
 
 .project-card:hover {
   background: #334155;
 }
 
+/* Image Container */
 .project-img-wrapper {
   background: #0f172a;
   padding: 5px;
@@ -332,6 +332,7 @@ section {
   border-radius: 6px;
 }
 
+/* Tags */
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -349,16 +350,19 @@ section {
   border-radius: 8px;
 }
 
+/* Title & Description – No Underlines */
 .project-title {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: 600;
+  text-decoration: none; /* Ensures no underline */
 }
 
 .project-description {
   font-size: 14px;
   color: #cbd5e1;
   margin-bottom: 10px;
+  text-decoration: none; /* Ensures no underline */
 }
 
 footer {
