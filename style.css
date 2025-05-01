@@ -131,6 +131,7 @@ section {
 #experience {
   padding: 60px 20px;
 }
+
 .experience-timeline {
   position: relative;
   max-width: 900px;
@@ -213,13 +214,18 @@ section {
 }
 
 .date {
-  margin: 4px 0 10px 0;
+  margin: 2px 0 10px 0;
   font-size: 13px;
   color: #94a3b8;
 }
 
 .skills {
   margin-top: 12px;
+  text-align: left;
+}
+
+.description {
+  text-align: left;
 }
 /* Responsive Timeline */
 @media screen and (max-width: 768px) {
