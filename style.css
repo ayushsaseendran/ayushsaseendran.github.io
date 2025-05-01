@@ -10,6 +10,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
+  background: #1a2b38;
 }
 
 .header-content {
