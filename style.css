@@ -69,17 +69,6 @@ header {
 }
 
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-
-
-
 .github-button {
   padding: 10px 20px;
   background-color: #58a6ff;
