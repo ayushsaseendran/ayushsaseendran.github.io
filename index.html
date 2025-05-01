@@ -84,14 +84,16 @@
   <p class="section-subtitle">My work experience as a Developer and other roles on different clubs and team projects.</p>
   <div class="experience-timeline">
 
+    <div class="timeline-line"></div>
+
     <div class="experience-item">
       <div class="timeline-dot"></div>
       <div class="experience-content">
         <div class="experience-header">
-          <img src="images/biomarin.png" alt="Biomarin Logo" class="company-icon">
+          <img src="images/apple.png" alt="Apple Logo" class="company-icon">
           <div>
-            <h3>Data Science Intern</h3>
-            <p class="company">Biomarin </p>
+            <h3>Software Engineer</h3>
+            <p class="company">Apple Inc.</p>
             <span class="date">Dec 2020 – Present</span>
           </div>
         </div>
@@ -135,7 +137,61 @@
   </div>
 </section>
 
+<style>
+.experience-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding-left: 40px;
+}
 
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  width: 2px;
+  background: #9333ea; /* Violet-600 */
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #0f172a; /* Match background */
+  border: 2px solid #9333ea;
+  border-radius: 50%;
+  position: absolute;
+  left: 23px;
+}
+
+.experience-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 50px;
+}
+
+.experience-content {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  color: #f1f5f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.company-icon {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+</style>
 
 
 <section id="projects">
