@@ -82,7 +82,8 @@ section {
 
 .skills-category {
   border: 1px solid #7c3aed;
-  border-radius: 10px;
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border-radius: 16px;
   padding: 30px;
   margin-bottom: 40px;
 }
@@ -104,7 +105,7 @@ section {
   background: #1f2937;
   padding: 10px 20px;
   border: 1px solid #4b5563;
-  border-radius: 10px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   gap: 10px;
