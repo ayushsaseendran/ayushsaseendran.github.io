@@ -59,9 +59,14 @@ nav {
 }
 
 nav a {
-  color: #ffffff;
+  color: white; /* default color */
   text-decoration: none;
-  font-weight: 600;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00d4ff; /* or any color you prefer on hover */
 }
 
 section {
